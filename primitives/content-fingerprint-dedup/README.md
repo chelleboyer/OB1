@@ -144,7 +144,7 @@ Rows inserted before this primitive was added will have NULL fingerprints. Run t
 
 ## Extensions That Use This
 
-- **[Email History Import](../../recipes/email-history-import/README.md)** — Gmail import computes SHA-256 fingerprints on each email and sends them to the ingest endpoint. With this primitive deployed, re-running an import produces zero duplicates.
+- **[Email History Import](../../recipes/email-history-import/README.md)** — Gmail import computes normalized SHA-256 fingerprints and inserts directly into Supabase. With this primitive deployed, re-running an import produces zero duplicates.
 - All other import recipes (ChatGPT, Google Activity, etc.) benefit from this primitive — it makes any import safely re-runnable.
 - Webhook-based capture (Slack, Telegram) is protected against retry-induced duplicates.
 - Multi-source capture (Chrome extension + MCP server) avoids cross-channel duplicates.

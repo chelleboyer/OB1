@@ -17,7 +17,7 @@ That's the whole workflow. The sections below cover what to watch out for.
 ## What Your AI Handles Well
 
 - **SQL setup** — Creating tables, functions, indexes, and security policies. Your AI can paste these directly into the Supabase SQL Editor or walk you through it.
-- **Edge Function code** — The `ingest-thought` and `open-brain-mcp` functions are fully written in the guide. Your AI reads them and helps you deploy them.
+- **Edge Function code** — The `open-brain-mcp` function is fully written in the guide. If you're setting up the Slack capture integration, the `ingest-thought` function is documented there too. Import recipes (Gmail, ChatGPT) connect directly to Supabase — no Edge Function needed.
 - **CLI commands** — Installing the Supabase CLI, linking your project, deploying functions, setting secrets. Your AI can run these directly if your tool supports terminal access.
 - **Debugging** — When something doesn't work, your AI can read Edge Function logs and help diagnose the issue. This is where the AI-assisted path genuinely shines over going solo.
 
